@@ -10,8 +10,7 @@ Create a function `fizzBuzz` which takes a number as parameter, and returns:
 function fizzBuzz (number) {
     if (number % 3 === 0 && number % 5 !== 0) {
         return "Fizz";
-    }
-    
+    }    
     if (number % 3 !== 0 && number % 5 === 0) {
         return "Buzz";
     }
