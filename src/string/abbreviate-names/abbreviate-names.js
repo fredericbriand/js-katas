@@ -12,6 +12,13 @@ Add you own tests.
 
 */
 
-// TODO add your code here
+function abbreviate (name) {
+    const firstAndLast = name.split(/\s+/g);
+    let initials = "";
+    firstAndLast.forEach(element => {
+        initials += element.substring(0, 1).toUpperCase() + ".";
+    });
+    return initials;
+}
 
 module.exports = abbreviate;

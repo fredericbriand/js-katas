@@ -8,16 +8,14 @@ Create a function `fizzBuzz` which takes a number as parameter, and returns:
 */
 
 function fizzBuzz (number) {
-    if (number % 3 === 0 && number % 5 !== 0) {
-        return "Fizz";
+    let name = "";
+    if (number % 3 === 0) {
+        name += "Fizz";
     }    
-    if (number % 3 !== 0 && number % 5 === 0) {
-        return "Buzz";
-    }
-    if (number % 3 === 0 && number % 5 === 0) {
-        return "FizzBuzz";
-    }    
-    return number.toString();
+    if (number % 5 === 0) {
+        name += "Buzz";
+    } 
+    return name || number.toString();
 }
 
 // Begin of tests
