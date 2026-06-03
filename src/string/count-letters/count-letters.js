@@ -16,6 +16,18 @@ Add you own tests.
 
 */
 
-// TODO add your code here
+function countChar (string, character) {
+    if (!string || !character || character.length > 1) {
+        return "-1";
+    }
+    let stringLetters = string.split('');
+    let sameLetters = 0;
+    for (let i = 0; i < stringLetters.length; i++) {
+        if (stringLetters[i] === character) {
+            sameLetters += 1;
+        }
+    }
+    return sameLetters;
+}
 
 module.exports = countChar;
